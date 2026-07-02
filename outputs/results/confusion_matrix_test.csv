@@ -1,0 +1,5 @@
+,pred_still,pred_standing,pred_walking,pred_jumping
+true_still,32,0,0,0
+true_standing,0,31,0,0
+true_walking,0,0,32,0
+true_jumping,0,0,0,30
