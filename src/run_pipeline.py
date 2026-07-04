@@ -119,7 +119,6 @@ def main():
     pd.DataFrame(cm_test, index=[f"true_{a}" for a in ACTIVITIES], columns=[f"pred_{a}" for a in ACTIVITIES]).to_csv(
         os.path.join(RESULTS_DIR, "confusion_matrix_test.csv"))
     A = np.exp(model.log_A)
-    ordered = [k for k in range(len(ACTIVITIES))]  # state index order as-is; mapping kept separately
     pd.DataFrame(A, index=[f"state_{k}({mapping[k]})" for k in range(model.n_states)],
                  columns=[f"state_{k}({mapping[k]})" for k in range(model.n_states)]).to_csv(
         os.path.join(RESULTS_DIR, "transition_matrix.csv"))
