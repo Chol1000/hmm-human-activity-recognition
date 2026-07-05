@@ -63,8 +63,9 @@ This result is verified, not just reported: a session-level leakage check (test 
 zero IDs with training, transformers fit on training data only), cross-validation across 5
 independently-drawn train/test splits, an emission-only ablation (removing the transition prior
 entirely still scores 99.2%, showing the sequence structure isn't inflating the number), and a
-label-shuffle test (scrambling activity labels collapses accuracy to 38%, near the 25% chance
-floor) — all four checks live as runnable cells in the notebook, not just claims.
+label-shuffle test (building the state-to-activity mapping from scrambled labels collapses
+accuracy to 25.6%, right at the 25% chance floor for four classes) — all four checks live as
+runnable cells in the notebook, not just claims.
 
 ![Emission means per learned state across the 12 PCA feature dimensions.](outputs/figures/08_emission_means_heatmap.png)
 
