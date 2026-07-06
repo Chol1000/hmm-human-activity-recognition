@@ -96,7 +96,7 @@ outputs/
   results/               metrics and tables as CSV
   figures/               every plot, as PNG
 reports/
-  report.md              short summary (the full formal report is submitted separately)
+  CholMonykuch_Formative2-HMM.pdf   the submitted formal report
 ```
 
 ## Running it
